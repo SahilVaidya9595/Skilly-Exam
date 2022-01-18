@@ -5,4 +5,4 @@ app.get('/', (req, res) => {
     res.send('hello world from server');
 });
 
-console.log('hello friends');
+console.log('hello friendss');
