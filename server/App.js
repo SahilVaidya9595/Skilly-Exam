@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 
+// Connection Part.......................................................................................
 
 const db = 'mongodb+srv://skillyexam:Skillyexam2022@cluster0.tnb6e.mongodb.net/SkillyExam?retryWrites=true&w=majority'
 
@@ -12,12 +13,11 @@ mongoose.connect(db).then(()=>{
 });
 
 
-// mongoose.connect(db, {}
-//     ).then((result) => {
-//     console.log('connection successfull');
-// }).catch((err) => {
-//     console.log('No connection');
-// });
+// Module.......................................................................................
+
+const Student = require('./module/studentSchema');
+
+
 
 app.get('/', (req, res) => {
     res.send('hello world from server');
