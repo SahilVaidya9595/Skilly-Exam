@@ -1,5 +1,23 @@
+const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
+
+
+const db = 'mongodb+srv://skillyexam:Skillyexam2022@cluster0.tnb6e.mongodb.net/SkillyExam?retryWrites=true&w=majority'
+
+mongoose.connect(db).then(()=>{
+    console.log("connected to database succesully")
+}).catch((err)=>{
+    console.log('connection failed');
+});
+
+
+// mongoose.connect(db, {}
+//     ).then((result) => {
+//     console.log('connection successfull');
+// }).catch((err) => {
+//     console.log('No connection');
+// });
 
 app.get('/', (req, res) => {
     res.send('hello world from server');
