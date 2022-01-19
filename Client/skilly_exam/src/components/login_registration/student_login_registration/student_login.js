@@ -24,11 +24,11 @@ export default function StudentLogin() {
                             </div>
                             <input type="text" className="form-control" placeholder="Password" />
                         </div>
-                        <button type="button" className="btn btn-secondary btn-block">LOGIN</button>
+                        <button type="button" className="btn-design">LOGIN</button>
                         <div className="message">
-                            <div><input type="checkbox" /> Remember ME</div>
-                            <div><a href="#">Forgot your password</a></div>
-                            <div>Don't have an account ?<Link to = "/studentregistration"> Sign Up </Link></div>
+                            <div className='remember-design'><input type="checkbox" /> Remember ME</div>
+                            <div className='pass-design'><a href="#">Forgot your password</a></div>
+                            <div className='acc-design'>Don't have an account ?<Link to = "/studentregistration"> Sign Up </Link></div>
                         </div>
                     </form>
                     <div className="social">
@@ -41,3 +41,4 @@ export default function StudentLogin() {
         </div>
     )
 }
+
