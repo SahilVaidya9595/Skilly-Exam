@@ -1,18 +1,10 @@
-/* .container-std-login-box {
-	margin: 70px auto;
-	width: 40%;
-	height: 500px;
-	padding:20px;
-	background-color: #ececec;
-	z-index: 1;
-  } */
-  .container-std-login-box {
+.container-std-login-box {
 	margin: 70px auto;
 	width: 40%;
 	height: 500px;
 	background-color: #ececec;
-  }  
-  .form-box{
+}  
+.form-box{
 	padding: auto;
 	width:90%;
 	height:450px;
@@ -29,18 +21,39 @@
 	top: 23px;
 }
   
-  .header-form{
+.header-form{
 	  margin-bottom:15px;
-  }
-  button{
-	  margin-top:40px;
-	  margin-bottom:10px;
-  }
-  .message{
-	  display: flex;
-	  justify-content: space-between;
-  }
-  .input-group-text {
+}
+button{
+	margin-top:10px;
+	margin-bottom:10px;
+	border: 1px solid rgb(107, 107, 224);
+	color: rgb(107, 107, 224);
+}
+.btn-design{
+	width: 79px;
+	height: 30px;
+	position: relative;
+	left: 190px;
+}
+.message{
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+}
+.remember-design{
+	position: relative;
+	left: 7px;
+}
+.pass-design{
+	position: relative;
+	left: 40px;
+}
+.acc-design{
+	position: relative;
+	left: 30px;
+}
+.input-group-text {
     display: flex;
     align-items: center;
     padding: 0.375rem 0.75rem;
@@ -54,21 +67,20 @@
     border: 1px solid #ced4da;
     border-radius: 0.25rem;
 }
-  @media screen and (max-width: 1250px){
-	  .form{
+@media screen and (max-width: 1250px){
+	.form{
 		width: 30%;
 		margin-left: 40px;
-	  }
-  }
+	}
+}
 @media screen and (max-width:1115px){
 	.container-std-login-box {
 		margin: 70px auto;
 		width: 75%;
 		height: 500px;
 		background-color: #ececec;
-
-	  }
-	  .form-box{
+}
+	.form-box{
 		padding: auto;
 		width:90%;
 		height:450px;
@@ -87,19 +99,40 @@
 		right: auto;
     	top: 27px;
 	} 
+	.social{  
+		display:flex;
+		justify-content:space-around;
+		padding:20px;
+	}
+	button{
+		margin-top:10px;
+		margin-bottom:10px;
+		border: 1px solid rgb(107, 107, 224);
+		color: rgb(107, 107, 224);
+	}
+	.btn-design{
+		width: 79px;
+		height: 30px;
+		position: relative;
+		left: 305px;
+	}
+	.acc-design{
+		position: relative;
+		left: 15px;
+	}
 }
   
-	/* .social{
-	  display:flex;
-	  justify-content:space-around;
-	  padding:30px;
-	}
+.social{  
+	display:flex;
+	justify-content:space-around;
+	padding:15px;
+}
 	
-	.social i{
-	  font-size:35px;
-	}
+.social i{
+	font-size:35px;
+}
 	
-	.social i:hover{
-	  color:red;
-	  cursor:pointer;
-	} */
+.social i:hover{
+	color:red;
+	cursor:pointer;
+}
