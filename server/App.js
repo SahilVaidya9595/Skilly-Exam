@@ -16,9 +16,16 @@ mongoose.connect(db).then(()=>{
 // Module.......................................................................................
 
 const Student = require('./module/studentSchema');
+// const College = require('./module/collegeSchema');
 
 
+//middeleware
 
+const middeleware = (req,res, next) =>{
+    console.log('Hello my middeleware');
+    next();
+}
+// middeleware();
 app.get('/', (req, res) => {
     res.send('hello world from server');
 });
@@ -27,7 +34,8 @@ app.get('/practice', (req, res) => {
     res.send('hello Home world from server');
 });
 
-app.get('/about', (req, res) => {
+app.get('/about', middeleware, (req, res) => {
+    console.log('Hello my about');
     res.send('hello About world from server');
 });
 
@@ -39,4 +47,4 @@ app.listen(3001, () => {
     console.log('Server is running at port no 3001');
 });
 
-console.log('hello Team from harshal and sahil 1:31');
+console.log('hello Team from harshal and sahil 5:30');
