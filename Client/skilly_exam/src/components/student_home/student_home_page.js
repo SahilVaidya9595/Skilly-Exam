@@ -23,7 +23,7 @@ export default function Stu_HomePage() {
                         <h3>Edu Portal</h3>
                     </div>
             </section>
-
+            <h1>hiii</h1>
         </div>
     )
 }
