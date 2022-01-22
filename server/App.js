@@ -1,21 +1,21 @@
-const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 
-// Connection Part.......................................................................................
+// Connection
 
-const db = 'mongodb+srv://skillyexam:Skillyexam2022@cluster0.tnb6e.mongodb.net/SkillyExam?retryWrites=true&w=majority'
-
-mongoose.connect(db).then(()=>{
-    console.log("connected to database succesully")
-}).catch((err)=>{
-    console.log('connection failed');
-});
+require('./database_connection/connection_db');
 
 
-// Module.......................................................................................
+app.use(express.json());
 
-const Student = require('./module/studentSchema');
+// Authentication
+
+app.use(require('./Routes/auth'));
+
+
+// Module
+
+// const Student = require('./module/studentSchema');
 // const College = require('./module/collegeSchema');
 
 
@@ -26,9 +26,11 @@ const middeleware = (req,res, next) =>{
     next();
 }
 // middeleware();
-app.get('/', (req, res) => {
-    res.send('hello world from server');
-});
+
+
+// app.get('/', (req, res) => {
+//     res.send('hello world from server');
+// });
 
 app.get('/practice', (req, res) => {
     res.send('hello Home world from server');
@@ -48,3 +50,6 @@ app.listen(3001, () => {
 });
 
 console.log('hello Team from harshal and sahil 5:30');
+
+
+
