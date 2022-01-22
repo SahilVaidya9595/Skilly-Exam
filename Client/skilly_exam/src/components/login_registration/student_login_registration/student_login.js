@@ -27,7 +27,7 @@ export default function StudentLogin() {
                         <button type="button" className="btn-design">LOGIN</button>
                         <div className="message">
                             <div className='remember-design'><input type="checkbox" /> Remember ME</div>
-                            <div className='pass-design'><a href="#">Forgot your password</a></div>
+                            <div className='pass-design'><a href="/studenthomePage">Forgot your password</a></div>
                             <div className='acc-design'>Don't have an account ?<Link to = "/studentregistration"> Sign Up </Link></div>
                         </div>
                     </form>
