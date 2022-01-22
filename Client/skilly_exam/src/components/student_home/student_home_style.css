@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.stu-container{
+    font-size: 16px;
+    margin-left: 100px;
+    position: relative;
+    top: 115px;
+    letter-spacing: 0.5px;
+    justify-content: space-between;
+    width: 50%;
+}
+span{
+    color: #ff0000ad;
+    font-weight: 400px;
+}
+h3{
+    color: #ff0000bf;
+    font-weight: 400px;
+}
+.stu-course-btn{
+    left: 20%;
+    width: 100px;
+    height: 45px;
+    color: red;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid red;
+    box-shadow: transparent;
+}
+.img-container{
+    position: relative;
+    /* background-color: blue; */
+    width: 49%;
+    height: 100%;
+    top: -310px;
+    left: 51%;
+    z-index: -1;
+}
+#stu-img{
+    position: relative;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    /* background-color: blue; */
+    height: 500px;
+    /* z-index: -1; */
+}
+.sponsored{ 
+    position: relative; 
+	display:flex;
+	justify-content:space-around;
+	padding:15px;
+    top: -310px;
+}
+	
+.sponsored h3{
+	font-size:35px;
+}
+@media screen and (max-width: 1250px){
+    .stu-container{
+        font-size: 14px;
+        margin-left: 60px;
+        position: relative;
+        top: 85px;
+        letter-spacing: 0.5px;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .img-container{
+        position: relative;
+        /* background-color: blue; */
+        width: 49%;
+        height: 100%;
+        top: -385px;
+        left: 51%;
+        z-index: -1;
+    }
+    .sponsored{ 
+        position: relative; 
+        display:flex;
+        justify-content:space-around;
+        padding:15px;
+        top: -385px;
+    }
+    .sponsored h3{
+        font-size:35px;
+    }
+}
+@media screen and (max-width: 1066px){
+    .stu-container{
+        font-size: 16px;
+        margin-left: 100px;
+        position: relative;
+        top: 115px;
+        letter-spacing: 0.5px;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .img-container{
+        position: relative;
+        /* background-color: blue; */
+        width: 99%;
+        height: 100%;
+        top: 150px;
+        left: 1%;
+        z-index: -1;
+    }
+    .sponsored{ 
+        position: relative; 
+        display:flex;
+        justify-content:space-around;
+        padding:15px;
+        top: 150px;
+    }
+    .sponsored h3{
+        font-size:35px;
+    }
+}
+@media screen and (max-width: 580px){
+    .stu-container{
+        /* font-size: 0px; */
+        margin-left: 20px;
+        position: relative;
+        top: 50px;
+        letter-spacing: 0.5px;
+        justify-content: space-between;
+        width: 80%;
+    }
+    .img-container{
+        position: relative;
+        /* background-color: blue; */
+        width: 99%;
+        height: 10%;
+        top: 100px;
+        left: 1%;
+        z-index: -1;
+    }
+    .sponsored{ 
+        position: relative; 
+        display:flex;
+        justify-content:space-around;
+        padding:10px;
+        top: 150px;
+    }
+    .sponsored h3{
+        font-size:22px;
+    }
+}
