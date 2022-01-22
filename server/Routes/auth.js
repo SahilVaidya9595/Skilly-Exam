@@ -46,4 +46,9 @@ router.post('/register', async (req, res) => {
     // res.send('mera register page');
 });
 
+router.post('/signin', (req, res) => {
+    console.log(req.body);
+});
+
+
 module.exports = router;
