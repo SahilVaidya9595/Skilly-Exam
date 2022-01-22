@@ -35,7 +35,7 @@ app.get('/practice', (req, res) => {
 });
 
 app.get('/about', middeleware, (req, res) => {
-    console.log('Hello my about');
+    // console.log('Hello my about');
     res.send('hello About world from server');
 });
 
