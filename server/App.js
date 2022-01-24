@@ -8,6 +8,11 @@ require('./database_connection/connection_db');
 
 app.use(express.json());
 
+
+// for college registration 
+
+app.use(require('./Routes/college_auth'));
+
 // Authentication
 
 app.use(require('./Routes/auth'));
